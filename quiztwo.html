@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Take Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+ 
+  <!-- JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <!-- CSS StyleSheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+    
+  <title>Make Food</title>
+
+
+</head>
+
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#myPage">Auto-Noms</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="quiz.html">FIND FOOD</a></li>
+                      <li><a href="quiztwo.html">MAKE FOOD</a></li>
+                      <li><a href="about.html">ABOUT US</a></li>
+                      <li><a href="reviews.html">REVIEWS</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <br><br><br>
+              <div class="ui container" id="mainInformationDiv">
+                  <div class="logoDiv">
+                      <h1 id="logoText">I'm a pro, make food myself</h1>
+                      <hr>
+                  </div>
+
+                <div id="mainPage">
+                    <div id="search-form">
+
+                        <div class = "form-group">
+                            <label for="keyword">What are you in the mood for?</label>
+                            <input class = "form-control" type="text" id="keyword" placeholder="Example: Hambergur, Sushi, Pasta, Salad">
+                        </div>
+
+                        
+                        <div class = "form-group">
+                            <label for = "health">What is your diet restriction?</label>
+                            <select class = "form-control" type="text" id="health" >
+                                <option value=""></option>
+                                <option value="alcohol-free">alcohol-free</option>
+                                <option value="celery-free">celery-free</option>
+                                <option value="crustacean-free">crustacean-free</option>
+                                <option value="dairy-free">dairy-free</option>
+                                <option value="egg-free">egg-free</option>
+                                <option value="fish-free">fish-free</option>
+                                <option value="gluten-free">gluten-free</option>
+                                <option value="kidney-friendly">kidney-friendly</option>
+                                <option value="kosher">kosher</option>
+                                <option value="low-potassium">low-potassium</option>
+                                <option value="lupine-free">lupine-free</option>
+                                <option value="mustard-free">mustard-free</option>
+                                <option value="No-oil-added">No-oil-added</option>
+                                <option value="low-sugar">low-sugar</option>
+                                <option value="paleo">paleo</option>
+                                <option value="peanut-free">peanut-free</option>
+                                <option value="pescatarian">pescatarian</option>
+                                <option value="pork-free">pork-free</option>
+                                <option value="red-meat-free">red-meat-free</option>
+                                <option value="sesame-free">sesame-free</option>
+                                <option value="shellfish-free">shellfish-free</option>
+                                <option value="soy-free">soy-free</option>
+                                <option value="sugar-conscious">sugar-conscious</option>
+                                <option value="tree-nut-free">tree-nut-free</option>
+                                <option value="vegan">vegan</option>
+                                <option value="vegetarian">vegetarian</option>
+                                <option value="wheat-free">wheat-free</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-group">
+                            <label for = "diet">Do you have a particular eating habit?</label>
+                            <select class = "form-control" type="text" id="diet">
+                                <option value=""></option>
+                                <option value="balanced">balanced</option>
+                                <option value="high-protein">high-protein</option>
+                                <option value="high-fiber">high-fiber</option>
+                                <option value="low-fat">low-fat</option>
+                                <option value="low-carb">low-carb</option>
+                                <option value="low-sodium">low-sodium</option>
+                            </select>
+                        </div>
+                    
+                        <div class = "form-group">
+                            <label for = "excluded">What ingredients don't you want?</label>
+                            <input class ="form-control" type="text" id="excluded" placeholder="Example: onion, peppers, beans">
+                        </div>
+                     
+                        <div class = "form-group">
+                            <label for = "minTime">How much time (minutes) do you have?</label><br>
+                            <input class ="form-control" type="text" id="minTime" placeholder ="Minimum (min)" style = "width: 45%; display: inline-block;">
+                            <input class ="form-control" type="text" id="maxTime" placeholder ="Maximum (min)" style = "width: 45%; display: inline-block;">
+                        </div>
+          
+                          <button class="btn btn-secondary center-block mt-5 " id="submit">Submit</button>
+                      </div>
+                </div>  <!-- main page--> 
+
+                <div id="results">
+
+                </div>
+
+                <script src="https://developer.edamam.com/attribution/badge.js"></script>
+                <div id="edamam-badge" data-color="white"></div>
+                
+    </body>
+    <script src="assets/js/apptwo.js"></script>
+</html>
